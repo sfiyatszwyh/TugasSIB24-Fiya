@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#daftar">Daftar</a>
+        <a href="jsdasar.html">Belajar JS Fundamental</a>
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="https://via.placeholder.com/1200x600?text=First+Slide" alt="First Slide">
+            <img src="https://via.placeholder.com/1200x600?text=Second+Slide" alt="Second Slide">
+            <img src="https://via.placeholder.com/1200x600?text=Third+Slide" alt="Third Slide">
+        </div>
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
+
+    <div class="section" id="daftar">
+        <h2>Daftar Sekarang!</h2>
+        <p>Bergabunglah bersama kami dengan mengisi formulir dibawah ini.</p>
+        <a href="form.html" class="btn">Pergi ke Formulir Pendaftaran</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
