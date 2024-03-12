@@ -14,6 +14,11 @@ html {
     z-index: 1000;
 }
 
+.navbar img {
+    height: 30px;
+    padding: 5px 10px;
+}
+
 .navbar a {
     float: right;
     display: block;

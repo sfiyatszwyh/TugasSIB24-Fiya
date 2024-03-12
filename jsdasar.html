@@ -4,11 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Fundamental</title>
+    <title>JS dasar</title>
 </head>
 
 <body>
     <h1>Ini JS dasar</h1>
+
+    <script>
+        // Alert
+        alert('Hallo, Ini Allert!');
+
+        // Confirm
+        var userConfirm = confirm('Apakah Anda yakin ingin melanjutkan?');
+        if (userConfirm) {
+            alert('IYA!');
+        } else {
+            alert('TIDAK!');
+        }
+        // If-Else
+        var age = 18;
+        if (age >= 18) {
+            alert('Kamu sudah dewasa!');
+        } else {
+            alert('Kamu belum dewasa!');
+        }
+        // Switch
+        var day = 'Monday';
+        switch (day) {
+            case 'Sunday':
+                alert('Today is Sunday!');
+                break;
+            case 'Monday':
+                alert('Today is Monday!');
+                break;
+            default:
+                alert('Just a regular day!');
+        }
+        // Prompt
+        var userName = prompt('Siapa Namamu:');
+        alert('Hallo, ' + userName + '!');
+        // Data Types
+        var x = true; // boolean
+        var score = 90; // number
+        var Nama = 'Fiya'; // string
+        var today = new Date(); // date
+        // For Looping
+        for (var i = 0; i < 5; i++) {
+            console.log(i);
+        }
+        // While
+        var j = 0;
+        while (j < 5) {
+            console.log(j);
+            j++;
+        }
+        // Do-While
+        var k = 0;
+        do {
+            console.log(k);
+            k++;
+        } while (k < 5);
+        // Logical Operators
+        // AND (&&)
+        console.log(true && false); // false
+        // OR (||)
+        console.log(true || false); // true
+        // NOT (!)
+        console.log(!true); // false
+    </script>
+
 </body>
 
 </html>
