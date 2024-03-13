@@ -83,3 +83,44 @@ html {
 .btn:hover {
     background-color: #0056b3;
 }
+
+.description-container {
+    height: 280px;
+    margin: 40px 0;
+    padding: 0 10%;
+    display: flex;
+}
+
+.description-container>div {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px 0px rgba(1, 1, 1, 0.1);
+    border-top: 1px solid rgb(228, 228, 228);
+}
+
+.description-container h2 {
+    color: var(--darkGray);
+    font-weight: bolder;
+}
+
+.description-container p {
+    color: var(--gray);
+    text-align: justify;
+}
+
+.description-container>div>div {
+    width: 500px;
+}
+
+.description-container>img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.description-left-footer {
+    display: flex;
+    justify-content: space-between;
+}
