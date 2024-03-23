@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crud API Responsive</title>
+    <link rel="stylesheet" href="css/apiresnposiv.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Tabel Produk</h2>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama Produk</th>
+                    <th>Jumlah</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <form id="addProductForm">
+            <input type="text" id="nama_produk" placeholder="Nama Produk" required>
+            <input type="number" id="jumlah" placeholder="Jumlah" required>
+            <input type="number" id="harga" placeholder="Harga" required>
+            <button type="submit">Tambah Produk</button>
+        </form>
+    </div>
+    <script src="js/crudAPIresponsive.js"></script>
+</body>
+
+</html>
