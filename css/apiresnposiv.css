@@ -1,40 +1,65 @@
-/* Global styles */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-#productTable {
+table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    border-spacing: 0;
 }
 
-#productTable th,
-#productTable td {
-    padding: 10px;
+table th,
+table td {
     border: 1px solid #ddd;
-    text-align: left;
+    padding: 8px;
 }
 
-#productTable th {
+table th {
     background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        overflow-x: auto;
+        display: block;
+    }
+    table thead,
+    table tbody,
+    table tr,
+    table th,
+    table td {
+        display: block;
+    }
+    table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    table tr {
+        margin-bottom: 15px;
+    }
+    table td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+    table td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    table td:nth-of-type(1):before {
+        content: "ID:";
+    }
+    table td:nth-of-type(2):before {
+        content: "Nama Produk:";
+    }
+    table td:nth-of-type(3):before {
+        content: "Jumlah:";
+    }
+    table td:nth-of-type(4):before {
+        content: "Harga:";
+    }
 }
 
 #addProductForm {
