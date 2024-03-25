@@ -26,7 +26,7 @@ document.getElementById('addProductForm').addEventListener('submit', function(ev
     const jumlah = document.getElementById('jumlah').value;
     const harga = document.getElementById('harga').value;
 
-    fetch('https://crudcrud.com/api/7ca2135844b04ffba8a024340b439a9f/produk', {
+    fetch('https://crudcrud.com/api/44ec2c3b57ce45609885a9150d0d5a3d/produk', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -47,7 +47,7 @@ function editProduct(productId) {
 
 // Delete Product
 function deleteProduct(productId) {
-    fetch(`https://crudcrud.com/api/7ca2135844b04ffba8a024340b439a9f/produk/${productId}`, {
+    fetch(`https://crudcrud.com/api/44ec2c3b57ce45609885a9150d0d5a3d/produk/${productId}`, {
             method: 'DELETE',
         })
         .then(response => {
