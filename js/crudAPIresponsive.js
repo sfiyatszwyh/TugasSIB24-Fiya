@@ -41,7 +41,7 @@ document.getElementById('addProductForm').addEventListener('submit', function(ev
 
 // Edit Product
 function editProduct(productId) {
-    // Write edit logic here
+
     alert('Edit product with ID: ' + productId);
 }
 
