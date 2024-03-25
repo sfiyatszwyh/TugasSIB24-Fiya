@@ -1,4 +1,4 @@
-fetch('https://crudcrud.com/api/7ca2135844b04ffba8a024340b439a9f/produk')
+fetch('https://crudcrud.com/api/44ec2c3b57ce45609885a9150d0d5a3d/produk')
     .then(response => response.json())
     .then(data => {
         const productTable = document.getElementById('productTable');
